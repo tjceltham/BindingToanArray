@@ -14,8 +14,8 @@ namespace WpfApp3
 
         public Cards()
         {
-            C.Add(new Card("10"));
-            C.Add(new Card("22"));
+            C.Add(new Card("0"));
+            C.Add(new Card("0"));
         }
 
         public ObservableCollection<Card> CC
@@ -25,14 +25,19 @@ namespace WpfApp3
                 return C;
             }
 
-            
+
         }
 
         public void Update(int x, string v)
         {
-            C[x].Number = v;
+            if (C[x].Number != v)
+            {
+                C[x].Number = v;
+            }
+            else
+            {
+                C[x].Number = "0";
+            }
         }
-
-
     }
 }
