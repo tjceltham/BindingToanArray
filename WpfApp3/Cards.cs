@@ -10,7 +10,7 @@ namespace WpfApp3
 {
     class Cards
     {
-        public ObservableCollection<Card> C = new ObservableCollection<Card>();
+        private ObservableCollection<Card> C = new ObservableCollection<Card>();
 
         public Cards()
         {
