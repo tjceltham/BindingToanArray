@@ -20,22 +20,22 @@ namespace WpfApp3
     /// </summary>
     public partial class MainWindow : Window
     {
-        private Cards cc;
+        private Board cc;
         public MainWindow()
         {
             InitializeComponent();
-            cc = new Cards();
+            cc = new Board();
             DataContext = cc;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            cc.Update(0, "1");
+            cc.Change(0, "1");
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            cc.Update(1, "1");
+            cc.Change(1, "1");
         }
     }
 }

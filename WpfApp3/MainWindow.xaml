@@ -10,8 +10,8 @@
         
         <Button Click="Button_Click">Toggle Element 0</Button>
         <Button Click="Button_Click_1"> Toggle Element 1</Button>
-        <TextBox Text="{Binding CC[0].Number}"></TextBox>
-        <TextBox Text="{Binding CC[1].Number}"> </TextBox>
+        <TextBox Text="{Binding ccc.CC[0].Number}"></TextBox>
+        <TextBox Text="{Binding ccc.CC[1].Number}"> </TextBox>
             
     </StackPanel>
 </Window>
