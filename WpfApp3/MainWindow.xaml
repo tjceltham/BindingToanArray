@@ -6,12 +6,17 @@
         xmlns:local="clr-namespace:WpfApp3"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <local:ColourCodeConverter x:Key="CCConverter" />
+    </Window.Resources>
     <StackPanel>
         
         <Button Click="Button_Click">Toggle Element 0</Button>
         <Button Click="Button_Click_1"> Toggle Element 1</Button>
-        <TextBox Text="{Binding ccc.CC[0].Number}"></TextBox>
+        <TextBox Text="{Binding ccc.CC[0].Number, Converter={StaticResource CCConverter}}"></TextBox>
+
+        <Ellipse Fill="{Binding ccc.CC[0].Number, Converter={StaticResource CCConverter}}" Visibility="Visible" Height="50"> </Ellipse>
         <TextBox Text="{Binding ccc.CC[1].Number}"> </TextBox>
-            
+        <Ellipse Fill="Aqua" Visibility="Visible" Height="50"></Ellipse>
     </StackPanel>
 </Window>

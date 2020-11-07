@@ -66,6 +66,7 @@
     <Compile Include="Board.cs" />
     <Compile Include="Card.cs" />
     <Compile Include="Cards.cs" />
+    <Compile Include="ColourCodeConverter.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
